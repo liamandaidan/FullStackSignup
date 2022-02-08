@@ -12,9 +12,13 @@ const signUpTemplate = new mongoose.Schema({
         type: String,
         required: true
     },
+    password: {
+        type: String,
+        requried: true
+    },
     date: {
-        type:Date,
-        default:Date.now
+        type: Date,
+        default: Date.now
     }
 })
 
