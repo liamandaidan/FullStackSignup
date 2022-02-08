@@ -6,8 +6,8 @@ const routesUrls = require('./routes/routes')
 const cors = require('cors')
 
 dotenv.config()
-//replace replace with correct user and pass
-mongoose.connect("mongodb+srv://replace:replace@cluster0.ayepn.mongodb.net/mytable?retryWrites=true&w=majority", () => console.log("Database connected!"))
+
+mongoose.connect(process.env.DATABASE_ACCESS, () => console.log("Database connected!"))
 /*
 const { MongoClient } = require('mongodb');
 const uri = "mongodb+srv://Canadian:Canadian@cluster0.ayepn.mongodb.net/mytable?retryWrites=true&w=majority";
